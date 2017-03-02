@@ -10,7 +10,8 @@ function capture(video, canvas, snapshotButton) {
   //Setup navigator for all versions of browsers.
   navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia ||
               navigator.mozGetUserMedia || navigator.msGetUserMedia;
-  var ctx = canvas[0].getContext('2d');
+  console.log(canvas);
+  var ctx = canvas.getContext('2d');
 
   var successCallback = function(mediaStream) {
     //The success callback function. On user click of snapshot button,
