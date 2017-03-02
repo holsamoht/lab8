@@ -1,8 +1,8 @@
 function initCamera() {
   //Uncomment and fill in the correct selectors below.
-  capture($('camera-video'),
-         $('camera-canvas'),
-         $('camera-button'));
+  capture($('#camera-video'),
+         $('#camera-canvas'),
+         $('#camera-button'));
 }
 
 function capture(video, canvas, snapshotButton) {
@@ -11,7 +11,7 @@ function capture(video, canvas, snapshotButton) {
   navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia ||
               navigator.mozGetUserMedia || navigator.msGetUserMedia;
   console.log(canvas);
-  var ctx = canvas.getContext('2d');
+  var ctx = canvas[0].getContext('2d');
 
   var successCallback = function(mediaStream) {
     //The success callback function. On user click of snapshot button,
