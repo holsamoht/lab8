@@ -11,6 +11,6 @@ function initMap() {
   var marker = new google.maps.Marker({
       position: ucsd_ltlng,
       map: map,
-      title: 'UCSD'
+      title: 'CICC'
   });
 }
